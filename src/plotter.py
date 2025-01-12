@@ -49,7 +49,6 @@ def plot_energy_supply_curve_by_fuel(df_bids , region, interval_datetime):
     edgecolor='none' 
     )
     plt.axhline(y=rrp, color='r', linestyle='--', label="RRP")
-    return fig
 
 def plot_price_setter_by_fuel(price_setters):
     price_setters['Fuel_index'] = pd.Categorical(price_setters['Fuel']).codes + 1 
