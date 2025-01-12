@@ -3,7 +3,8 @@
 ### 1. Installation
 There are two ways to install the dependencies for your project: Pipenv or requirements.txt. Below are the installation steps for both approaches.
 
-**Using Pipenv and Pipfile**
+**1.1. Using Pipenv and Pipfile**
+
 If you want to use Pipenv, which manages your virtual environment and dependencies in a Pipfile and Pipfile.lock, follow these steps:
 
 Install Pipenv (if not already installed):
@@ -38,7 +39,8 @@ pipenv shell
 ```
 
 
-**Using requirements.txt**
+**1.2 Using requirements.txt**
+
 If you prefer to use a simple requirements.txt file follow these steps:
 
 ```bash
@@ -46,16 +48,17 @@ pip install -r requirements.txt
 ```
 This will install all the necessary packages specified in requirements.txt.
 
+### 2. Running Analysis
 
 To run the analysis and see the results, open `analysis.ipynb` notebook. This notebook uses modules under `src` folder. All the logics for calculations are inside `functions.py` and all the plottings are inside `plotter.py`.
 
 
 The following is the structure of this repo. 
+```
 C:.
 │   analysis.ipynb
 │   Pipfile
 │   Pipfile.lock
-│   Powerline.code-workspace
 │   README.md
 │   requirements.txt
 │
@@ -67,3 +70,4 @@ C:.
 └───src
         functions.py
         plotter.py
+```
